@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.CreateReport.CreateReport_038_Data_Settings_Do_Not_Load_Data_Automatically
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.404 sec - in com.lqp.automation.features.CreateReport.CreateReport_038_Data_Settings_Do_Not_Load_Data_Automatically

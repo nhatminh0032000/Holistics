@@ -1,0 +1,548 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" ng-strict-di="" class="ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-popover-popup].popover.top-left &gt; .arrow,[uib-popover-popup].popover.top-right &gt; .arrow,[uib-popover-popup].popover.bottom-left &gt; .arrow,[uib-popover-popup].popover.bottom-right &gt; .arrow,[uib-popover-popup].popover.left-top &gt; .arrow,[uib-popover-popup].popover.left-bottom &gt; .arrow,[uib-popover-popup].popover.right-top &gt; .arrow,[uib-popover-popup].popover.right-bottom &gt; .arrow,[uib-popover-html-popup].popover.top-left &gt; .arrow,[uib-popover-html-popup].popover.top-right &gt; .arrow,[uib-popover-html-popup].popover.bottom-left &gt; .arrow,[uib-popover-html-popup].popover.bottom-right &gt; .arrow,[uib-popover-html-popup].popover.left-top &gt; .arrow,[uib-popover-html-popup].popover.left-bottom &gt; .arrow,[uib-popover-html-popup].popover.right-top &gt; .arrow,[uib-popover-html-popup].popover.right-bottom &gt; .arrow,[uib-popover-template-popup].popover.top-left &gt; .arrow,[uib-popover-template-popup].popover.top-right &gt; .arrow,[uib-popover-template-popup].popover.bottom-left &gt; .arrow,[uib-popover-template-popup].popover.bottom-right &gt; .arrow,[uib-popover-template-popup].popover.left-top &gt; .arrow,[uib-popover-template-popup].popover.left-bottom &gt; .arrow,[uib-popover-template-popup].popover.right-top &gt; .arrow,[uib-popover-template-popup].popover.right-bottom &gt; .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <title ng-non-bindable=""> New Query - Epsilon Mobile</title>
+
+  <link rel="stylesheet" media="all" href="https://d205e8uykazrcm.cloudfront.net/assets/application-5f83fb19f1c26b6e68aeae9b2b59cf608f7c34acad6e35095556f3c5c3636936.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300i,400i,600italic,600,700,700i,800,800i" rel="stylesheet" type="text/css" />
+  
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+ULWHAZe+HhtnJllWzZh7+IeEIV7ddyNncGfvgG4IeqIBQ1m15qaOVIewlEwSe0qsbeE981fx8/fSsGwr6rkfA==" />
+  <script type="text/javascript" async="" defer="" src="https://tracking.holistics.io/piwik.js"></script><script async="" charset="utf-8" src="//v2.zopim.com/?2zKnEO8rZtyOTeOu121nWgiu5vRBJrjV" type="text/javascript"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+              
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-sanitize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/restangular/1.5.2/restangular.min.js"></script>
+              
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.4.0/moment-timezone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/0.10.3/angular-moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.13.0/polyfill.min.js"></script>
+
+<!--
+  Google Map Public Key: AIzaSyD4Z0GQDKD2GCTYYVqhxxPI2KKAwCyrMcw
+  This key is restricted by our domain: holistics.io
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4Z0GQDKD2GCTYYVqhxxPI2KKAwCyrMcw&amp;libraries=visualization"></script>
+  <script src="https://d205e8uykazrcm.cloudfront.net/assets/application-ead5140ffbee3c437423b8ce2598a1460aed2eb97c3f3239c7992cb0173fd319.js"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled &gt; .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace_searchbox">.ace_search {background-color: #ddd;border: 1px solid #cbcbcb;border-top: 0 none;max-width: 325px;overflow: hidden;margin: 0;padding: 4px;padding-right: 6px;padding-bottom: 0;position: absolute;top: 0px;z-index: 99;white-space: normal;}.ace_search.left {border-left: 0 none;border-radius: 0px 0px 5px 0px;left: 0;}.ace_search.right {border-radius: 0px 0px 0px 5px;border-right: 0 none;right: 0;}.ace_search_form, .ace_replace_form {border-radius: 3px;border: 1px solid #cbcbcb;float: left;margin-bottom: 4px;overflow: hidden;}.ace_search_form.ace_nomatch {outline: 1px solid red;}.ace_search_field {background-color: white;color: black;border-right: 1px solid #cbcbcb;border: 0 none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;height: 22px;outline: 0;padding: 0 7px;width: 214px;margin: 0;}.ace_searchbtn,.ace_replacebtn {background: #fff;border: 0 none;border-left: 1px solid #dcdcdc;cursor: pointer;float: left;height: 22px;margin: 0;position: relative;}.ace_searchbtn:last-child,.ace_replacebtn:last-child {border-top-right-radius: 3px;border-bottom-right-radius: 3px;}.ace_searchbtn:disabled {background: none;cursor: default;}.ace_searchbtn {background-position: 50% 50%;background-repeat: no-repeat;width: 27px;}.ace_searchbtn.prev {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADFJREFUeNpiSU1NZUAC/6E0I0yACYskCpsJiySKIiY0SUZk40FyTEgCjGgKwTRAgAEAQJUIPCE+qfkAAAAASUVORK5CYII=);    }.ace_searchbtn.next {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADRJREFUeNpiTE1NZQCC/0DMyIAKwGJMUAYDEo3M/s+EpvM/mkKwCQxYjIeLMaELoLMBAgwAU7UJObTKsvAAAAAASUVORK5CYII=);    }.ace_searchbtn_close {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAZ0lEQVR42u2SUQrAMAhDvazn8OjZBilCkYVVxiis8H4CT0VrAJb4WHT3C5xU2a2IQZXJjiQIRMdkEoJ5Q2yMqpfDIo+XY4k6h+YXOyKqTIj5REaxloNAd0xiKmAtsTHqW8sR2W5f7gCu5nWFUpVjZwAAAABJRU5ErkJggg==) no-repeat 50% 0;border-radius: 50%;border: 0 none;color: #656565;cursor: pointer;float: right;font: 16px/16px Arial;height: 14px;margin: 5px 1px 9px 5px;padding: 0;text-align: center;width: 14px;}.ace_searchbtn_close:hover {background-color: #656565;background-position: 50% 100%;color: white;}.ace_replacebtn.prev {width: 54px}.ace_replacebtn.next {width: 27px}.ace_button {margin-left: 2px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;overflow: hidden;opacity: 0.7;border: 1px solid rgba(100,100,100,0.23);padding: 1px;-moz-box-sizing: border-box;box-sizing:    border-box;color: black;}.ace_button:hover {background-color: #eee;opacity:1;}.ace_button:active {background-color: #ddd;}.ace_button.checked {border-color: #3399ff;opacity:1;}.ace_search_options{margin-bottom: 3px;text-align: right;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;}
+/*# sourceURL=ace/css/ace_searchbox */</style><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+	font-weight: bold;
+	padding: 8px 15px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: nowrap;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+	color: #B94A48;
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+	color: #468847;
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+	color: #3A87AD;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+	color: #C09853;
+	background-color: #FCF8E3;
+	border-color: #FBEED5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+  <script src="https://d205e8uykazrcm.cloudfront.net/packs/application-1df4f4cf7dc8519047f8.js"></script><style type="text/css">table.table-list-jobs[data-v-ceb51b6c]{margin-top:10px}table.table-list-jobs th[data-v-ceb51b6c]{padding:8px}</style><style type="text/css"></style><style type="text/css">.heatmap-container[data-v-2886ed04]{position:relative}.heatmap-container[data-v-2886ed04],.map-renderer[data-v-2886ed04]{height:100%}.heatmap-container&gt;.external-settings[data-v-2886ed04]{position:absolute;right:0;top:0;background-color:#fff;padding:2px 4px;font-size:12px;z-index:10}.heatmap-container&gt;.external-settings label[data-v-2886ed04]{margin:0}.geo-heatmap-loaded[data-v-2886ed04]{visibility:hidden;width:0;height:0}</style><style type="text/css">.ds-search[data-v-21854588]{position:relative}.ds-search input[data-v-21854588]{padding-left:25px;padding-right:25px}.ds-search i.fa[data-v-21854588]{position:absolute;top:9px;left:8px}.ds-search button.close[data-v-21854588]{position:absolute;top:4px;right:8px}.list-group-item[data-v-21854588]{position:relative}.list-group-item .buttons[data-v-21854588]{position:absolute;top:5px;right:5px}.list-group-item .buttons .btn-icon[data-v-21854588]{visibility:hidden}.list-group-item.current[data-v-21854588]{background-color:#ccc}.list-group-item.current .btn-icon[data-v-21854588]{visibility:visible}.ds-noti[data-v-21854588]{text-align:center;margin-top:10px}</style><style type="text/css"></style><style type="text/css">.editor[data-v-6cb58bda]{border:1px solid #ccc}</style><style type="text/css">.panel[data-v-583a912e]{border-color:#ccc}.panel-heading[data-v-583a912e]{background-color:#ccc;border-color:#ccc;position:relative}.panel-heading .shared-with[data-v-583a912e]{position:absolute;top:16px;right:30px}.panel-heading .shared-with label[data-v-583a912e]{font-weight:700}.panel-heading .form-inline label[data-v-583a912e]{font-weight:700;margin:0 5px 0 15px;line-height:32px;vertical-align:middle}.panel-heading .form-inline .form-control[data-v-583a912e]{font-weight:700}.panel-body[data-v-583a912e]{border-color:#ccc;position:relative}.panel-body .save-errors[data-v-583a912e]{position:absolute;opacity:1;bottom:0;right:0;margin:10px 25px;z-index:10}.panel-body .save-errors h5[data-v-583a912e]{font-weight:700}.panel-body .save-errors .close[data-v-583a912e]{position:absolute;top:5px;right:5px}.panel-body .save-errors span[data-v-583a912e]{white-space:pre-wrap}.panel-footer[data-v-583a912e]{background-color:#ccc}.flip-enter-active[data-v-583a912e]{transition:all .2s cubic-bezier(.55,.085,.68,.53)}.flip-leave-active[data-v-583a912e]{transition:all .25s cubic-bezier(.25,.46,.45,.94)}.flip-enter[data-v-583a912e],.flip-leave-to[data-v-583a912e]{transform:scaleY(0) translateZ(0);opacity:0}</style><style type="text/css"></style><style type="text/css"></style><style type="text/css">.fade-enter-active[data-v-41fd2e14],.fade-leave-active[data-v-41fd2e14]{transition:opacity 1s}.fade-enter[data-v-41fd2e14],.fade-leave-active[data-v-41fd2e14]{opacity:0;will-change:opacity}@-webkit-keyframes rotation{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(359deg)}}@-moz-keyframes rotation{0%{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(359deg)}}@-o-keyframes rotation{0%{-o-transform:rotate(0deg)}to{-o-transform:rotate(359deg)}}@keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.btn[data-v-41fd2e14]{display:inline-block;font-weight:400;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.5rem 1rem;font-size:15px;border-radius:.25rem;background-color:#337ab7}button.btn-loader[data-v-41fd2e14]{display:flex;align-items:center;transition:all .3s ease}button.btn-loader[data-v-41fd2e14]:disabled{cursor:not-allowed}.spinner[data-v-41fd2e14]{height:16px;width:16px;margin-right:2px;opacity:1;filter:alpha(opacity=100);-webkit-animation:rotation .7s infinite linear;-moz-animation:rotation .7s infinite linear;-o-animation:rotation .7s infinite linear;animation:rotation .7s infinite linear;border-left:4px solid rgba(0,0,0,.2);border-right:4px solid rgba(0,0,0,.2);border-bottom:4px solid rgba(0,0,0,.2);border-top:4px solid #9e9e9e;border-radius:100%;transition:all .3s ease}</style><style type="text/css">[data-v-275a19d2]{color:#333}</style><style type="text/css">.date-picker[data-v-61872e1b]{background:#fff;cursor:pointer;padding:5px 10px;border:1px solid #ccc;width:100%}.date-picker[data-v-61872e1b]:hover{background:#eee}</style><style type="text/css">.date-range-picker[data-v-3f2b9e1d]{background:#fff;cursor:pointer;padding:5px 10px;border:1px solid #ccc;width:100%}.date-range-picker[data-v-3f2b9e1d]:hover{background:#eee}</style><style type="text/css">.dataset-viz .editor-viz .chart-list[data-v-289e9c36]{width:100%;margin:10px 0;background-color:#f1f1f1;border-radius:3px;padding:0;overflow:hidden}.dataset-viz .editor-viz .chart-list li[data-v-289e9c36]{list-style:none;display:inline-block;width:10%;text-align:center;cursor:pointer}.dataset-viz .editor-viz .chart-list li.active[data-v-289e9c36],.dataset-viz .editor-viz .chart-list li[data-v-289e9c36]:active{background-color:#b9b9b9}.dataset-viz .editor-viz .chart-list li.disabled[data-v-289e9c36]{cursor:not-allowed;opacity:.2}.dataset-viz .editor-viz .chart-list .chart-icon[data-v-289e9c36]{width:100%;height:30px;display:inline-block;background-position:50%;background-size:28px 28px;margin-bottom:-4px}.dataset-viz .viz .pivot-table[data-v-289e9c36]{overflow-x:auto}</style><style type="text/css">p[data-v-36f16df6]{font-size:2em;text-align:center}</style>
+  <script language="javascript">
+  _.merge(window.H, {
+    current_version: 'v1.28-214-g7fc07a5  7fc07a5',
+    current_page: 'adhoc_queries_new',
+    current_user: {
+      id: 1996,
+      display_name: 'Loc Vo',
+      first_name: 'Loc',
+      time_zone: {"name":"Singapore","desc":"(GMT+08:00) Singapore","identifier":"Asia/Singapore","offset":28800},
+      is_admin: true,
+      is_analyst: false,
+      is_bizuser: false,
+      email: "thanhloc@epsilon-mobile.com",
+      settings: {"nux":{"nux_users":true,"nux_filter":true,"nux_report":true,"nux_introUI":true,"nux_dashboard":true,"nux_datasource":true,"nux_schedule_email":true},"time_zone":"Singapore"},
+      created_at: function () {
+        var time = moment.parseZone('2016-11-11T07:56:36.130Z');
+        return time.isValid() ? time.toDate() : null;
+      }()
+    },
+    current_tenant: {
+      id: 95,
+      name: 'Epsilon Mobile',
+      settings: {"limit_jobs":{"export":10,"filter":3,"report":10,"default":5,"preview":3,"report2":2,"prefetch":2},"limit_rows":500000,"maintenance":{"is_on":false,"message":"Holistics is under maintenance. Please come back later."},"default_ds_id":176,"report_jobs_per_user_limit":5},
+      num_ds: 1,
+      uname: 'epsilon-mobile',
+      has_datasource: true,
+      has_reports: true,
+      is_trial: false
+    },
+    time_zone_list: {"Etc/UTC":{"name":"UTC","desc":"(GMT+00:00) UTC","identifier":"Etc/UTC","offset":0},"Pacific/Midway":{"name":"Midway Island","desc":"(GMT-11:00) Midway Island","identifier":"Pacific/Midway","offset":-39600},"Pacific/Pago_Pago":{"name":"American Samoa","desc":"(GMT-11:00) American Samoa","identifier":"Pacific/Pago_Pago","offset":-39600},"Pacific/Honolulu":{"name":"Hawaii","desc":"(GMT-10:00) Hawaii","identifier":"Pacific/Honolulu","offset":-36000},"America/Juneau":{"name":"Alaska","desc":"(GMT-09:00) Alaska","identifier":"America/Juneau","offset":-32400},"America/Los_Angeles":{"name":"Pacific Time (US \u0026 Canada)","desc":"(GMT-08:00) Pacific Time (US \u0026 Canada)","identifier":"America/Los_Angeles","offset":-28800},"America/Tijuana":{"name":"Tijuana","desc":"(GMT-08:00) Tijuana","identifier":"America/Tijuana","offset":-28800},"America/Denver":{"name":"Mountain Time (US \u0026 Canada)","desc":"(GMT-07:00) Mountain Time (US \u0026 Canada)","identifier":"America/Denver","offset":-25200},"America/Phoenix":{"name":"Arizona","desc":"(GMT-07:00) Arizona","identifier":"America/Phoenix","offset":-25200},"America/Chihuahua":{"name":"Chihuahua","desc":"(GMT-07:00) Chihuahua","identifier":"America/Chihuahua","offset":-25200},"America/Mazatlan":{"name":"Mazatlan","desc":"(GMT-07:00) Mazatlan","identifier":"America/Mazatlan","offset":-25200},"America/Chicago":{"name":"Central Time (US \u0026 Canada)","desc":"(GMT-06:00) Central Time (US \u0026 Canada)","identifier":"America/Chicago","offset":-21600},"America/Regina":{"name":"Saskatchewan","desc":"(GMT-06:00) Saskatchewan","identifier":"America/Regina","offset":-21600},"America/Mexico_City":{"name":"Mexico City","desc":"(GMT-06:00) Mexico City","identifier":"America/Mexico_City","offset":-21600},"America/Monterrey":{"name":"Monterrey","desc":"(GMT-06:00) Monterrey","identifier":"America/Monterrey","offset":-21600},"America/Guatemala":{"name":"Central America","desc":"(GMT-06:00) Central America","identifier":"America/Guatemala","offset":-21600},"America/New_York":{"name":"Eastern Time (US \u0026 Canada)","desc":"(GMT-05:00) Eastern Time (US \u0026 Canada)","identifier":"America/New_York","offset":-18000},"America/Indiana/Indianapolis":{"name":"Indiana (East)","desc":"(GMT-05:00) Indiana (East)","identifier":"America/Indiana/Indianapolis","offset":-18000},"America/Bogota":{"name":"Bogota","desc":"(GMT-05:00) Bogota","identifier":"America/Bogota","offset":-18000},"America/Lima":{"name":"Quito","desc":"(GMT-05:00) Quito","identifier":"America/Lima","offset":-18000},"America/Halifax":{"name":"Atlantic Time (Canada)","desc":"(GMT-04:00) Atlantic Time (Canada)","identifier":"America/Halifax","offset":-14400},"America/Caracas":{"name":"Caracas","desc":"(GMT-04:00) Caracas","identifier":"America/Caracas","offset":-14400},"America/La_Paz":{"name":"La Paz","desc":"(GMT-04:00) La Paz","identifier":"America/La_Paz","offset":-14400},"America/Santiago":{"name":"Santiago","desc":"(GMT-04:00) Santiago","identifier":"America/Santiago","offset":-14400},"America/St_Johns":{"name":"Newfoundland","desc":"(GMT-03:30) Newfoundland","identifier":"America/St_Johns","offset":-12600},"America/Sao_Paulo":{"name":"Brasilia","desc":"(GMT-03:00) Brasilia","identifier":"America/Sao_Paulo","offset":-10800},"America/Argentina/Buenos_Aires":{"name":"Buenos Aires","desc":"(GMT-03:00) Buenos Aires","identifier":"America/Argentina/Buenos_Aires","offset":-10800},"America/Montevideo":{"name":"Montevideo","desc":"(GMT-03:00) Montevideo","identifier":"America/Montevideo","offset":-10800},"America/Guyana":{"name":"Georgetown","desc":"(GMT-04:00) Georgetown","identifier":"America/Guyana","offset":-14400},"America/Godthab":{"name":"Greenland","desc":"(GMT-03:00) Greenland","identifier":"America/Godthab","offset":-10800},"Atlantic/South_Georgia":{"name":"Mid-Atlantic","desc":"(GMT-02:00) Mid-Atlantic","identifier":"Atlantic/South_Georgia","offset":-7200},"Atlantic/Azores":{"name":"Azores","desc":"(GMT-01:00) Azores","identifier":"Atlantic/Azores","offset":-3600},"Atlantic/Cape_Verde":{"name":"Cape Verde Is.","desc":"(GMT-01:00) Cape Verde Is.","identifier":"Atlantic/Cape_Verde","offset":-3600},"Europe/Dublin":{"name":"Dublin","desc":"(GMT+00:00) Dublin","identifier":"Europe/Dublin","offset":0},"Europe/London":{"name":"London","desc":"(GMT+00:00) London","identifier":"Europe/London","offset":0},"Europe/Lisbon":{"name":"Lisbon","desc":"(GMT+00:00) Lisbon","identifier":"Europe/Lisbon","offset":0},"Africa/Casablanca":{"name":"Casablanca","desc":"(GMT+00:00) Casablanca","identifier":"Africa/Casablanca","offset":0},"Africa/Monrovia":{"name":"Monrovia","desc":"(GMT+00:00) Monrovia","identifier":"Africa/Monrovia","offset":0},"Europe/Belgrade":{"name":"Belgrade","desc":"(GMT+01:00) Belgrade","identifier":"Europe/Belgrade","offset":3600},"Europe/Bratislava":{"name":"Bratislava","desc":"(GMT+01:00) Bratislava","identifier":"Europe/Bratislava","offset":3600},"Europe/Budapest":{"name":"Budapest","desc":"(GMT+01:00) Budapest","identifier":"Europe/Budapest","offset":3600},"Europe/Ljubljana":{"name":"Ljubljana","desc":"(GMT+01:00) Ljubljana","identifier":"Europe/Ljubljana","offset":3600},"Europe/Prague":{"name":"Prague","desc":"(GMT+01:00) Prague","identifier":"Europe/Prague","offset":3600},"Europe/Sarajevo":{"name":"Sarajevo","desc":"(GMT+01:00) Sarajevo","identifier":"Europe/Sarajevo","offset":3600},"Europe/Skopje":{"name":"Skopje","desc":"(GMT+01:00) Skopje","identifier":"Europe/Skopje","offset":3600},"Europe/Warsaw":{"name":"Warsaw","desc":"(GMT+01:00) Warsaw","identifier":"Europe/Warsaw","offset":3600},"Europe/Zagreb":{"name":"Zagreb","desc":"(GMT+01:00) Zagreb","identifier":"Europe/Zagreb","offset":3600},"Europe/Brussels":{"name":"Brussels","desc":"(GMT+01:00) Brussels","identifier":"Europe/Brussels","offset":3600},"Europe/Copenhagen":{"name":"Copenhagen","desc":"(GMT+01:00) Copenhagen","identifier":"Europe/Copenhagen","offset":3600},"Europe/Madrid":{"name":"Madrid","desc":"(GMT+01:00) Madrid","identifier":"Europe/Madrid","offset":3600},"Europe/Paris":{"name":"Paris","desc":"(GMT+01:00) Paris","identifier":"Europe/Paris","offset":3600},"Europe/Amsterdam":{"name":"Amsterdam","desc":"(GMT+01:00) Amsterdam","identifier":"Europe/Amsterdam","offset":3600},"Europe/Berlin":{"name":"Berlin","desc":"(GMT+01:00) Berlin","identifier":"Europe/Berlin","offset":3600},"Europe/Zurich":{"name":"Zurich","desc":"(GMT+01:00) Zurich","identifier":"Europe/Zurich","offset":3600},"Europe/Rome":{"name":"Rome","desc":"(GMT+01:00) Rome","identifier":"Europe/Rome","offset":3600},"Europe/Stockholm":{"name":"Stockholm","desc":"(GMT+01:00) Stockholm","identifier":"Europe/Stockholm","offset":3600},"Europe/Vienna":{"name":"Vienna","desc":"(GMT+01:00) Vienna","identifier":"Europe/Vienna","offset":3600},"Africa/Algiers":{"name":"West Central Africa","desc":"(GMT+01:00) West Central Africa","identifier":"Africa/Algiers","offset":3600},"Europe/Bucharest":{"name":"Bucharest","desc":"(GMT+02:00) Bucharest","identifier":"Europe/Bucharest","offset":7200},"Africa/Cairo":{"name":"Cairo","desc":"(GMT+02:00) Cairo","identifier":"Africa/Cairo","offset":7200},"Europe/Helsinki":{"name":"Helsinki","desc":"(GMT+02:00) Helsinki","identifier":"Europe/Helsinki","offset":7200},"Europe/Kiev":{"name":"Kyiv","desc":"(GMT+02:00) Kyiv","identifier":"Europe/Kiev","offset":7200},"Europe/Riga":{"name":"Riga","desc":"(GMT+02:00) Riga","identifier":"Europe/Riga","offset":7200},"Europe/Sofia":{"name":"Sofia","desc":"(GMT+02:00) Sofia","identifier":"Europe/Sofia","offset":7200},"Europe/Tallinn":{"name":"Tallinn","desc":"(GMT+02:00) Tallinn","identifier":"Europe/Tallinn","offset":7200},"Europe/Vilnius":{"name":"Vilnius","desc":"(GMT+02:00) Vilnius","identifier":"Europe/Vilnius","offset":7200},"Europe/Athens":{"name":"Athens","desc":"(GMT+02:00) Athens","identifier":"Europe/Athens","offset":7200},"Europe/Istanbul":{"name":"Istanbul","desc":"(GMT+03:00) Istanbul","identifier":"Europe/Istanbul","offset":10800},"Europe/Minsk":{"name":"Minsk","desc":"(GMT+03:00) Minsk","identifier":"Europe/Minsk","offset":10800},"Asia/Jerusalem":{"name":"Jerusalem","desc":"(GMT+02:00) Jerusalem","identifier":"Asia/Jerusalem","offset":7200},"Africa/Harare":{"name":"Harare","desc":"(GMT+02:00) Harare","identifier":"Africa/Harare","offset":7200},"Africa/Johannesburg":{"name":"Pretoria","desc":"(GMT+02:00) Pretoria","identifier":"Africa/Johannesburg","offset":7200},"Europe/Kaliningrad":{"name":"Kaliningrad","desc":"(GMT+02:00) Kaliningrad","identifier":"Europe/Kaliningrad","offset":7200},"Europe/Moscow":{"name":"St. Petersburg","desc":"(GMT+03:00) St. Petersburg","identifier":"Europe/Moscow","offset":10800},"Europe/Volgograd":{"name":"Volgograd","desc":"(GMT+03:00) Volgograd","identifier":"Europe/Volgograd","offset":10800},"Europe/Samara":{"name":"Samara","desc":"(GMT+04:00) Samara","identifier":"Europe/Samara","offset":14400},"Asia/Kuwait":{"name":"Kuwait","desc":"(GMT+03:00) Kuwait","identifier":"Asia/Kuwait","offset":10800},"Asia/Riyadh":{"name":"Riyadh","desc":"(GMT+03:00) Riyadh","identifier":"Asia/Riyadh","offset":10800},"Africa/Nairobi":{"name":"Nairobi","desc":"(GMT+03:00) Nairobi","identifier":"Africa/Nairobi","offset":10800},"Asia/Baghdad":{"name":"Baghdad","desc":"(GMT+03:00) Baghdad","identifier":"Asia/Baghdad","offset":10800},"Asia/Tehran":{"name":"Tehran","desc":"(GMT+03:30) Tehran","identifier":"Asia/Tehran","offset":12600},"Asia/Muscat":{"name":"Muscat","desc":"(GMT+04:00) Muscat","identifier":"Asia/Muscat","offset":14400},"Asia/Baku":{"name":"Baku","desc":"(GMT+04:00) Baku","identifier":"Asia/Baku","offset":14400},"Asia/Tbilisi":{"name":"Tbilisi","desc":"(GMT+04:00) Tbilisi","identifier":"Asia/Tbilisi","offset":14400},"Asia/Yerevan":{"name":"Yerevan","desc":"(GMT+04:00) Yerevan","identifier":"Asia/Yerevan","offset":14400},"Asia/Kabul":{"name":"Kabul","desc":"(GMT+04:30) Kabul","identifier":"Asia/Kabul","offset":16200},"Asia/Yekaterinburg":{"name":"Ekaterinburg","desc":"(GMT+05:00) Ekaterinburg","identifier":"Asia/Yekaterinburg","offset":18000},"Asia/Karachi":{"name":"Karachi","desc":"(GMT+05:00) Karachi","identifier":"Asia/Karachi","offset":18000},"Asia/Tashkent":{"name":"Tashkent","desc":"(GMT+05:00) Tashkent","identifier":"Asia/Tashkent","offset":18000},"Asia/Kolkata":{"name":"New Delhi","desc":"(GMT+05:30) New Delhi","identifier":"Asia/Kolkata","offset":19800},"Asia/Kathmandu":{"name":"Kathmandu","desc":"(GMT+05:45) Kathmandu","identifier":"Asia/Kathmandu","offset":20700},"Asia/Dhaka":{"name":"Dhaka","desc":"(GMT+06:00) Dhaka","identifier":"Asia/Dhaka","offset":21600},"Asia/Colombo":{"name":"Sri Jayawardenepura","desc":"(GMT+05:30) Sri Jayawardenepura","identifier":"Asia/Colombo","offset":19800},"Asia/Almaty":{"name":"Almaty","desc":"(GMT+06:00) Almaty","identifier":"Asia/Almaty","offset":21600},"Asia/Novosibirsk":{"name":"Novosibirsk","desc":"(GMT+07:00) Novosibirsk","identifier":"Asia/Novosibirsk","offset":25200},"Asia/Rangoon":{"name":"Rangoon","desc":"(GMT+06:30) Rangoon","identifier":"Asia/Rangoon","offset":23400},"Asia/Bangkok":{"name":"Hanoi","desc":"(GMT+07:00) Hanoi","identifier":"Asia/Bangkok","offset":25200},"Asia/Jakarta":{"name":"Jakarta","desc":"(GMT+07:00) Jakarta","identifier":"Asia/Jakarta","offset":25200},"Asia/Krasnoyarsk":{"name":"Krasnoyarsk","desc":"(GMT+07:00) Krasnoyarsk","identifier":"Asia/Krasnoyarsk","offset":25200},"Asia/Shanghai":{"name":"Beijing","desc":"(GMT+08:00) Beijing","identifier":"Asia/Shanghai","offset":28800},"Asia/Chongqing":{"name":"Chongqing","desc":"(GMT+08:00) Chongqing","identifier":"Asia/Chongqing","offset":28800},"Asia/Hong_Kong":{"name":"Hong Kong","desc":"(GMT+08:00) Hong Kong","identifier":"Asia/Hong_Kong","offset":28800},"Asia/Urumqi":{"name":"Urumqi","desc":"(GMT+06:00) Urumqi","identifier":"Asia/Urumqi","offset":21600},"Asia/Kuala_Lumpur":{"name":"Kuala Lumpur","desc":"(GMT+08:00) Kuala Lumpur","identifier":"Asia/Kuala_Lumpur","offset":28800},"Asia/Singapore":{"name":"Singapore","desc":"(GMT+08:00) Singapore","identifier":"Asia/Singapore","offset":28800},"Asia/Taipei":{"name":"Taipei","desc":"(GMT+08:00) Taipei","identifier":"Asia/Taipei","offset":28800},"Australia/Perth":{"name":"Perth","desc":"(GMT+08:00) Perth","identifier":"Australia/Perth","offset":28800},"Asia/Irkutsk":{"name":"Irkutsk","desc":"(GMT+08:00) Irkutsk","identifier":"Asia/Irkutsk","offset":28800},"Asia/Ulaanbaatar":{"name":"Ulaanbaatar","desc":"(GMT+08:00) Ulaanbaatar","identifier":"Asia/Ulaanbaatar","offset":28800},"Asia/Seoul":{"name":"Seoul","desc":"(GMT+09:00) Seoul","identifier":"Asia/Seoul","offset":32400},"Asia/Tokyo":{"name":"Tokyo","desc":"(GMT+09:00) Tokyo","identifier":"Asia/Tokyo","offset":32400},"Asia/Yakutsk":{"name":"Yakutsk","desc":"(GMT+09:00) Yakutsk","identifier":"Asia/Yakutsk","offset":32400},"Australia/Darwin":{"name":"Darwin","desc":"(GMT+09:30) Darwin","identifier":"Australia/Darwin","offset":34200},"Australia/Adelaide":{"name":"Adelaide","desc":"(GMT+09:30) Adelaide","identifier":"Australia/Adelaide","offset":34200},"Australia/Melbourne":{"name":"Melbourne","desc":"(GMT+10:00) Melbourne","identifier":"Australia/Melbourne","offset":36000},"Australia/Sydney":{"name":"Sydney","desc":"(GMT+10:00) Sydney","identifier":"Australia/Sydney","offset":36000},"Australia/Brisbane":{"name":"Brisbane","desc":"(GMT+10:00) Brisbane","identifier":"Australia/Brisbane","offset":36000},"Australia/Hobart":{"name":"Hobart","desc":"(GMT+10:00) Hobart","identifier":"Australia/Hobart","offset":36000},"Asia/Vladivostok":{"name":"Vladivostok","desc":"(GMT+10:00) Vladivostok","identifier":"Asia/Vladivostok","offset":36000},"Pacific/Guam":{"name":"Guam","desc":"(GMT+10:00) Guam","identifier":"Pacific/Guam","offset":36000},"Pacific/Port_Moresby":{"name":"Port Moresby","desc":"(GMT+10:00) Port Moresby","identifier":"Pacific/Port_Moresby","offset":36000},"Asia/Magadan":{"name":"Magadan","desc":"(GMT+11:00) Magadan","identifier":"Asia/Magadan","offset":39600},"Asia/Srednekolymsk":{"name":"Srednekolymsk","desc":"(GMT+11:00) Srednekolymsk","identifier":"Asia/Srednekolymsk","offset":39600},"Pacific/Guadalcanal":{"name":"Solomon Is.","desc":"(GMT+11:00) Solomon Is.","identifier":"Pacific/Guadalcanal","offset":39600},"Pacific/Noumea":{"name":"New Caledonia","desc":"(GMT+11:00) New Caledonia","identifier":"Pacific/Noumea","offset":39600},"Pacific/Fiji":{"name":"Fiji","desc":"(GMT+12:00) Fiji","identifier":"Pacific/Fiji","offset":43200},"Asia/Kamchatka":{"name":"Kamchatka","desc":"(GMT+12:00) Kamchatka","identifier":"Asia/Kamchatka","offset":43200},"Pacific/Majuro":{"name":"Marshall Is.","desc":"(GMT+12:00) Marshall Is.","identifier":"Pacific/Majuro","offset":43200},"Pacific/Auckland":{"name":"Wellington","desc":"(GMT+12:00) Wellington","identifier":"Pacific/Auckland","offset":43200},"Pacific/Tongatapu":{"name":"Nuku'alofa","desc":"(GMT+13:00) Nuku'alofa","identifier":"Pacific/Tongatapu","offset":46800},"Pacific/Fakaofo":{"name":"Tokelau Is.","desc":"(GMT+13:00) Tokelau Is.","identifier":"Pacific/Fakaofo","offset":46800},"Pacific/Chatham":{"name":"Chatham Is.","desc":"(GMT+12:45) Chatham Is.","identifier":"Pacific/Chatham","offset":45900},"Pacific/Apia":{"name":"Samoa","desc":"(GMT+13:00) Samoa","identifier":"Pacific/Apia","offset":46800}},
+    env: 'production',
+    form_authenticity_token: 'UR6eYgdAo5ycuQkNGfrXLAc8v3H8gE5wBLHO4ph03sEgWUUY1oTB3aM7UjlyhVvpVJUrA0qqVTJGOpDsNmYbVw==',
+    flash: {
+      error: ''
+    },
+    base_url: 'https://secure.holistics.io'
+  });
+
+
+  // moving towards camelCasing
+  window.H.globalConfigs = {
+    autocomplete: true,
+    fixedTableHeaders: true,
+    nuxEmailList: [],
+    widgetFixedTableHeaders: true,
+    chartAnnotations: true
+  };
+
+    window.states.can_impersonate = true;
+
+</script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47899822-1', 'holistics.io');
+    if (window.H.current_tenant.id &gt; 0) {
+      ga('set', 'dimension0', window.H.current_tenant.id); // tenant id
+    }
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+  </script>
+
+
+  
+
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css" id="core-notify">.notifyjs-corner {
+	position: fixed;
+	margin: 5px;
+	z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+	position: relative;
+	display: block;
+	height: inherit;
+	width: inherit;
+	margin: 3px;
+}
+
+.notifyjs-wrapper {
+	z-index: 1;
+	position: absolute;
+	display: inline-block;
+	height: 0;
+	width: 0;
+}
+
+.notifyjs-container {
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
+
+.notifyjs-hidable {
+	cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+	position: relative;
+}
+
+.notifyjs-arrow {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+}</style><style id="ace-crimson-editor">.ace-crimson-editor .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-crimson-editor .ace_gutter-layer {width: 100%;text-align: right;}.ace-crimson-editor .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-crimson-editor {background-color: #FFFFFF;color: rgb(64, 64, 64);}.ace-crimson-editor .ace_cursor {color: black;}.ace-crimson-editor .ace_invisible {color: rgb(191, 191, 191);}.ace-crimson-editor .ace_identifier {color: black;}.ace-crimson-editor .ace_keyword {color: blue;}.ace-crimson-editor .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-crimson-editor .ace_constant.ace_language {color: rgb(255, 156, 0);}.ace-crimson-editor .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-crimson-editor .ace_invalid {text-decoration: line-through;color: rgb(224, 0, 0);}.ace-crimson-editor .ace_fold {}.ace-crimson-editor .ace_support.ace_function {color: rgb(192, 0, 0);}.ace-crimson-editor .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-crimson-editor .ace_support.ace_type,.ace-crimson-editor .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-crimson-editor .ace_keyword.ace_operator {color: rgb(49, 132, 149);}.ace-crimson-editor .ace_string {color: rgb(128, 0, 128);}.ace-crimson-editor .ace_comment {color: rgb(76, 136, 107);}.ace-crimson-editor .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-crimson-editor .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-crimson-editor .ace_constant.ace_numeric {color: rgb(0, 0, 64);}.ace-crimson-editor .ace_variable {color: rgb(0, 64, 128);}.ace-crimson-editor .ace_xml-pe {color: rgb(104, 104, 91);}.ace-crimson-editor .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-crimson-editor .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-crimson-editor .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-crimson-editor .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-crimson-editor .ace_marker-layer .ace_active-line {background: rgb(232, 242, 254);}.ace-crimson-editor .ace_gutter-active-line {background-color : #dcdcdc;}.ace-crimson-editor .ace_meta.ace_tag {color:rgb(28, 2, 255);}.ace-crimson-editor .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-crimson-editor .ace_string.ace_regex {color: rgb(192, 0, 192);}.ace-crimson-editor .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-crimson-editor */</style><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/29/2/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/29/2/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/29/2/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fsecure.holistics.io%2Fadhoc%2Fnew&amp;4sAIzaSyD4Z0GQDKD2GCTYYVqhxxPI2KKAwCyrMcw&amp;callback=_xdc_._hd8tdy&amp;token=105548"></script></head>
+<body ng-controller="AppCtrl as gvm" ng-init="gvm.init()" style="" class="ng-scope"><div class="zopim" __jx__id="___$_60 ___$_60" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 210px; height: 30px; right: 10px; bottom: 0px;"><iframe frameborder="0" src="about:blank" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 290px; height: 400px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"><iframe frameborder="0" src="about:blank" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"></iframe></div>
+<script language="javascript">
+  window.states.currentMenuId = 'queries';
+</script>
+
+<header class="top-menu flex-container-row ng-scope" ng-controller="HeaderCtrl as vm" ng-init="init()">
+
+  <div class="functions-nav">
+
+      <div class="sidebar-toggle open-state" ng-class="{'open-state': vm.sidebarToggle}" ng-click="vm.toggleSidebar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+
+    <h1 class="app-name"> <a href="/">Epsilon Mobile</a> </h1>
+
+      <div class="hl-dropdown-menu dropdown recent-fav" id="menu-fav-recent" uib-dropdown="">
+    <a class="dropdown-toggle  btn btn-transparent" href="" uib-tooltip="Your Favorite and Recent Reports" tooltip-placement="bottom" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+      <icon i="menu-fav" style="color: #ffb500" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-star" style=""></i>
+</span></icon>
+    </a>
+    <div class="dropdown-menu" uib-dropdown-menu="">
+      <div class="flex-container-row list-2-columns">
+        <div class="flex-child-grow-50 favourites">
+          <label>
+            <icon i="menu-fav" style="color: #ffb500" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-star" style=""></i>
+</span></icon>
+            Your Favorite Reports</label>
+          <ul ng-show="vm.favoriteReports" class="second-level-indent" style="">
+            <!-- ngRepeat: report in vm.favoriteReports track by report.id -->
+          </ul>
+          <em ng-show="!vm.favoriteReports || vm.favoriteReports.length == 0" class="">No report</em>
+        </div>
+        <div class="flex-child-grow-50">
+          <label>
+            <icon i="menu-recent" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-clock-o" style=""></i>
+</span></icon>
+            Recent Viewed Reports</label>
+          <ul ng-show="vm.recentReports" class="second-level-indent separator" ng-class="{separator: (vm.recentReports &amp;&amp; vm.recentReports.length &gt; 0)}" style="">
+            <!-- ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10511-multiple-selections-filters" class="ng-binding" href="/queries/10511-multiple-selections-filters">
+                Multiple Selections Filters</a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/9467-user-in-class" class="ng-binding" href="/queries/9467-user-in-class">
+                User in class</a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10799-auto-aggregations-show-total-row" class="ng-binding" href="/queries/10799-auto-aggregations-show-total-row">
+                Auto Aggregations_Show_Total_Row  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10798-auto-aggregations-show-total-row" class="ng-binding" href="/queries/10798-auto-aggregations-show-total-row">
+                Auto Aggregations_Show_Total_Row  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10797-auto-insert-query-template" class="ng-binding" href="/queries/10797-auto-insert-query-template">
+                Auto Insert query template  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10796-create-new-report" class="ng-binding" href="/queries/10796-create-new-report">
+                Create_New_Report</a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10791-auto-aggregations-show-total-row" class="ng-binding" href="/queries/10791-auto-aggregations-show-total-row">
+                Auto Aggregations_Show_Total_Row  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10790-auto-aggregations-show-total-row" class="ng-binding" href="/queries/10790-auto-aggregations-show-total-row">
+                Auto Aggregations_Show_Total_Row  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10789-auto-insert-query-template" class="ng-binding" href="/queries/10789-auto-insert-query-template">
+                Auto Insert query template  </a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id --><li ng-repeat="report in vm.recentReports track by report.id" class="ng-scope">
+              <a ng-href="/queries/10788-create-new-report" class="ng-binding" href="/queries/10788-create-new-report">
+                Create_New_Report</a>
+            </li><!-- end ngRepeat: report in vm.recentReports track by report.id -->
+          </ul>
+          <em ng-show="!vm.recentReports || vm.recentReports.length == 0" class="ng-hide" style="">No report</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div ng-controller="SearchCtrl" ng-init="init()" id="menu-search" class="search-bar ng-scope">
+    <div class="search-wrapper">
+      <input id="search-input" class="search-input ng-pristine ng-untouched ng-valid ng-empty" autocomplete="off" placeholder="Search reports..." ng-model="query" ng-keyup="onKeyUp($event)" ng-focus="onFocus()" ng-blur="onBlur()" />
+
+      <i id="search-clear" ng-show="query.length &gt; 0" ng-click="clearSearch()" class="form-control-feedback fa fa-times ng-hide"></i>
+    </div>
+    <div id="search-result-container" ng-show="show" class="no-result ng-hide">Search index is still being loaded. Please wait a few more seconds.</div>
+  </div>
+
+
+      <div class="grp-shortcuts margin-left-10 dropdown split-dropdown" id="menu-quick-links" uib-dropdown="">
+    <a class="btn btn-default btn-primary btn-sm main-action" href="/queries/new">
+      <span class=""><icon i="add" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-plus" style=""></i>
+</span></icon></span>
+      New Report
+    </a>
+    <a class="dropdown-toggle btn btn-default btn-sm btn-primary" href="" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+      <icon i="caret-down" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-caret-down" style=""></i>
+</span></icon>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="new-dashboard" href="" ng-click="vm.newDashboard()">
+          <icon i="dashboard" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-th-large" style=""></i>
+</span></icon>
+          New Dashboard
+        </a>
+      </li>
+      <li>
+        <a class="pos-relative" href="" ng-click="vm.openWizardInsight()">
+          <icon i="generator" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="icon icon-generator" style=""></i>
+</span></icon>
+          Dashboard Generator
+          <span class="floating label red">New!</span>
+        </a>
+      </li>
+      <li>
+        <a class="new-metric" href="/metrics/new">
+          <icon i="metric" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-calculator" style=""></i>
+</span></icon>
+          New Metric
+        </a>
+      </li>
+      <li>
+        <a class="new-adhoc" href="/adhoc/new">
+          <icon i="adhoc" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-newspaper-o" style=""></i>
+</span></icon>
+          New Adhoc Query
+        </a>
+      </li>
+      <li role="separator" class="divider"></li>
+      <li>
+        <a class="new-import" href="/data_imports/new">
+          <icon i="data-import" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-download" style=""></i>
+</span></icon>
+          New Data Import
+        </a>
+      </li>
+      <li>
+        <a class="new-transform" href="/data_transforms/new">
+          <icon i="data-transform" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-random" style=""></i>
+</span></icon>
+          New Data Transform
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  </div>
+
+  <div class="user-nav">
+
+      <div class="inline-block margin-right-30 vertical-align-top ng-hide" ng-show="vm.is_trial">
+        <a class="btn btn-sm btn-primary-green" id="product-tour" ng-click="vm.openProductTour()">
+          <i class="fa fa-lightbulb-o wrap" aria-hidden="true"></i>
+          Product Tour
+        </a>
+      </div>
+
+    <a href="" class="btn btn-primary btn-sm ng-hide" ng-click="gvm.demo_trial.toggleShowing(true)" ng-show="gvm.demo_trial.activated &amp;&amp; !gvm.demo_trial.showing">Try For Free</a>
+
+      <div class="hl-dropdown-menu dropdown margin-right-10 notification-header">
+    <a class="dropdown-toggle btn btn-transparent ci-open-noti" href="" ng-click="vm.openNotifications()">
+      <icon i="notification" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-bell" style=""></i>
+</span></icon>
+      <span class="unread-count ng-binding ng-hide" ng-show="vm.notifications.length &gt; 0">0</span>
+    </a>
+  </div>
+
+
+      <div class="support">
+    <div class="hl-dropdown-menu  dropdown" id="menu-support" uib-dropdown="">
+      <a class="dropdown-toggle btn btn-transparent" href="" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+        <icon i="help-2" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-question" style=""></i>
+</span></icon>
+        <icon class="toggle-icon ng-isolate-scope" i="chevron-down">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-chevron-down" style=""></i>
+</span></icon>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu="">
+        <li ng-show="!vm.is_trial" class="">
+          <a target="_blank" class="help-docs" href="" ng-click="vm.openProductTour()" id="product-tour">
+          <span class="icon-wrap">
+            <i class="fa fa-lightbulb-o wrap" aria-hidden="true"></i>
+          </span>
+            Product Tour
+          </a>
+        </li>
+        <li>
+          <a target="_blank" class="help-docs" href="http://docs.holistics.io/">
+          <span class="icon-wrap">
+            <i class="fa fa-file-text-o"></i>
+          </span>
+            Documentation
+          </a>
+        </li>
+        <li>
+          <a class="help-support" href="" ng-click="vm.openSupport()">
+            <icon i="mail" wrap="true" class="ng-isolate-scope">
+<span ng-class="{'icon-wrap': vm.wrap }" class="icon-wrap">
+  <i ng-class="vm.cls" class="fa fa-envelope-o" style=""></i>
+</span></icon>
+            Email Support
+          </a>
+        </li>
+        <li>
+          <a href="http://docs.holistics.io/release-notes/" target="_blank">
+          <span class="icon-wrap">
+            <i class="fa fa-list-alt"></i>
+          </span>
+            Release Notes <span class="highlight">v1.28</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+      <div class="hl-dropdown-menu dropdown margin-right-10" id="menu-user" uib-dropdown="">
+    <a class="dropdown-toggle btn btn-transparent ng-binding" href="" ng-class="{active: vm.isActive('users')}" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+      <span class="fa fa-user margin-right-5"></span>
+      Loc
+      <icon class="toggle-icon ng-isolate-scope" i="chevron-down">
+<span ng-class="{'icon-wrap': vm.wrap }">
+  <i ng-class="vm.cls" class="fa fa-chevron-down" style=""></i>
+</span></icon>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" uib-dropdown-menu="">
+      <label><strong class="ng-binding">Loc Vo</strong></label>
+      <a href="/users/settings">User Settings</a>      <a rel="nofollow" data-method="delete" href="/users/sign_out">Logout</a>
+    </div>
+  </div>
+
+
+  </div>
+
+</header>
+
+
+<div class="main-container">
+
+    <div ng-controller="SidebarCtrl as vm" id="sidebar" class="sidebar-wrapper ng-scope sidebar-container"><ul class="nav nav-leftnav"><li id="sidebar-home" class=""><a class="title section"><!----> <span class="ng-binding">
+          Home
+        </span></a> <ul class="nav subnav"><li class=""><div><a href="/browse" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span class="ng-binding">Reports</span></a></div></li><li class=""><div><div class="dropdown-wrapper"><div class=""><a class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-th-large"></i></span> <span class="ng-binding">Dashboards</span> <span class="tooltip-icon toggle-icon margin-left-10"><i class="fa fa-chevron-right"></i></span></a></div> <div class="v-dropdown-menu" style="visibility: hidden; top: 0px; left: 0px; position: fixed; display: none;"><div class="search-wrapper"><input type="text" placeholder="Search..." class="form-control" /></div> <ul class="dropdown-items" style="max-height: 350px;"><li><a href="/dashboards/703-auto-users-classes-shared-filter">Auto Users Classes Shared Filter</a></li><li><a href="/dashboards/686-auto-permission-users-in-classes">Auto Permission Users in Classes</a></li><li><a href="/dashboards/687-auto-all-reports-permission">Auto All Reports Permission</a></li><li><a href="/dashboards/767-auto-gender-counter">Auto Gender Counter</a></li><li><a href="/dashboards/768-auto-permission-number-of-articles">Auto permission number of articles</a></li><li><a href="/dashboards/769-auto-permission-class">Auto Permission class</a></li><li><a href="/dashboards/813-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/816-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/817-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/827-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/828-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/829-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/831-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/832-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/833-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/834-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/835-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/836-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/837-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/814-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/818-autodashboard">AutoDashboard</a></li><li><a href="/dashboards/815-autodashboard">AutoDashboard</a></li></ul> <div style="display: none;"><div class="empty-list">No dashboard found</div></div> <div><div class="dropdown-footer"><a><span class="tooltip-icon"><i class="fa fa-plus"></i></span>
+                  New Dashboard
+                </a> <a href="/dashboards"><span class="tooltip-icon"><i class="fa fa-arrow-circle-right"></i></span>
+                  To Dashboards Page
+                  <p class="menu-desc">A quick look at all of your dashboards details</p></a></div></div></div></div></div></li></ul></li><li id="sidebar-reporting" class=""><a class="title section"><!----> <span class="ng-binding">
+          Data Reporting
+        </span></a> <ul class="nav subnav"><li class=""><div><a href="/metrics" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-tachometer"></i></span> <span class="ng-binding">Metrics</span></a></div></li><li class=""><div><a href="/shared_filters" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-filter"></i></span> <span class="ng-binding">Shared Filters</span></a></div></li><li class=""><div><a href="/query_templates" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-book"></i></span> <span class="ng-binding">Query Templates</span></a></div></li><li class="active"><div><a href="/adhoc" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-newspaper-o"></i></span> <span class="ng-binding">Adhoc Queries</span></a></div></li><li class=""><div><a href="/annotations" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-pencil"></i></span> <span class="ng-binding">Annotations</span></a></div></li><li class=""><div><a href="/email_schedules" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-envelope-o"></i></span> <span class="ng-binding">Email Schedules</span></a></div></li></ul></li><li id="sidebar-pipeline" class=""><a class="title section"><!----> <span class="ng-binding">
+          Data Preparation
+        </span></a> <ul class="nav subnav"><li class=""><div><a href="/data_imports" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-download"></i></span> <span class="ng-binding">Data Imports</span></a></div></li><li class=""><div><a href="/data_transforms" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-random"></i></span> <span class="ng-binding">Data Transforms</span></a></div></li></ul></li><li id="sidebar-admin" class=""><a class="title section"><!----> <span class="ng-binding">
+          Management
+        </span></a> <ul class="nav subnav"><li class=""><div><div class="dropdown-wrapper"><div class=""><a class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-user"></i></span> <span class="ng-binding">Impersonate</span> <span class="tooltip-icon toggle-icon margin-left-10"><i class="fa fa-chevron-right"></i></span></a></div> <div class="v-dropdown-menu" style="visibility: hidden; top: 0px; left: 0px; position: fixed; display: none;"><div class="search-wrapper" style="display: none;"><input type="text" placeholder="Search..." class="form-control" /></div> <ul class="dropdown-items" style="max-height: 350px;"><li><a href="/users/3389/impersonate"><span class="tooltip-icon"><i class="fa fa-user"></i></span> Genner developer</a></li><li><a href="/users/3385/impersonate"><span class="tooltip-icon"><i class="fa fa-user"></i></span> Minh Pham</a></li><li><a href="/users/3391/impersonate"><span class="tooltip-icon"><i class="fa fa-user"></i></span> Thuan 999</a></li><li><a href="/users/3403/impersonate"><span class="tooltip-icon"><i class="fa fa-user"></i></span> thuan in WPL Advanced</a></li><li><a href="/users/2057/impersonate"><span class="tooltip-icon"><i class="fa fa-user"></i></span> TrainingVision</a></li></ul> <div style="display: none;"><div class="empty-list">No user found</div></div> <div></div></div></div></div></li><li class=""><div><a href="/manage#/data_sources" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-database"></i></span> <span class="ng-binding">Data Sources</span></a></div></li><li class=""><div><a href="/manage#/users" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-users"></i></span> <span class="ng-binding">Users</span></a></div></li><li class=""><div><a href="/manage#/jobs" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-television"></i></span> <span class="ng-binding">Jobs Monitoring</span></a></div></li><li class=""><div><a href="/manage#/settings" class="title"><span class="tooltip-icon icon-wrap"><i class="fa fa-gear"></i></span> <span class="ng-binding">More Settings ...</span></a></div></li></ul></li></ul> <div class="powered"><a href="/accounts/billing" class="trial-countdown ng-binding" style="display: none;">
+      
+    </a> <span><a target="_blank" href="http://docs.holistics.io/release-notes" class="version">
+          v1.28
+        </a></span> <a target="_blank" href="http://www.holistics.io" class="logo"><span>Powered By</span> <img src="/images/holistics-logo-white.png" /></a></div></div>
+
+
+  <div class="main-content">
+      <!-- ngIf: gvm.demo_trial.activated -->
+
+    
+    
+    
+    <div class="snaps">
+
+  <ol class="breadcrumb">
+    <li class="active">
+      <a href="/adhoc/">Adhoc Queries</a>
+    </li>
+    <li>New Query</li>
+  </ol>
+
+  <div class="adhoc-queries-editor"><div class="snaps-form-wrapper"><form id="new_adhoc_query" class="new_adhoc_query ng-pristine ng-valid"><div class="panel panel-light"><div class="panel-body"><div class="row col-xs-12 margin-bottom-10"><label>Data Source</label> <select name="adhoc_query[data_source_id]" id="adhoc_query_data_source_id"><option value="176">WPL-Production</option></select> <label class="margin-left-10"><input type="checkbox" />
+            Non-select query
+              <div> <div tabindex="-1" role="dialog" class="modal fade"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" aria-label="Close" class="close"><span aria-hidden="true">×</span></button> <h4 class="modal-title">Warning</h4></div> <div class="modal-body"><p>
+                  Confirm? Please only use this option for non-select query like INSERT, UPDATE,
+                  GRANT, etc.. This will turn-off row limitation and will affect performance when using with
+                  SELECT query on large resultset
+                </p></div> <div class="modal-footer"><button type="button" class="btn btn-default"><span>Cancel</span></button> <button type="button" data-action="auto-focus" class="btn btn-primary"><span>OK</span></button></div></div></div></div></div></label></div> <div class="row"><div class="col-md-12"><div class="media editor-wrapper"><div class="pull-right media-object width-300 height-400"><div class="schema-explorer" style="height: 100%;"><div class="loading margin-top-5" style="display: none;"><span>Loading...</span> <span class="tooltip-icon"><i class="fa fa-spinner fa-spin"></i></span></div> <div class="loading margin-top-5" style="display: none;">Please choose a data source</div> <div class="loading" style="display: none;">There are too many tables to display</div> <div style="padding: 5px; display: none;"><span class="alert-danger">Error loading schema information</span></div> <div class="search-container"><input type="text" placeholder="Search tables and columns..." class="form-control search-query" /> <span><a role="button"><span class="tooltip-icon"><i class="fa fa-refresh"></i></span></a></span></div> <div class="schemas-container"><ul class="schema-list ci-schema-list"><li><span><span class="icon-wrap"><i class="fa fa-caret-down"></i> <i class="fa fa-caret-right" style="display: none;"></i></span> <span style="display: none;"></span> <span>(all tables)</span></span> <ul class="table-list"><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>ImportDataUsers</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>androidapps</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>announcements</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_classes</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_notes</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_poll</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_poll_answers</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_quiz</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_quiz_answers</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_rates</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_shares</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>article_tag</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>articles</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>assignees</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>banks</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>catalogs</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>classes</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>comments</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>countries</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>discussion_histories</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>discussion_tag</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>discussions</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>event_attendees</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>event_class</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>event_feedback_answers</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>event_images</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>events</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>media</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>media_class</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>media_tag</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>migrations</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>notes</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>password_reminders</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>question_feedback</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>question_options</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>questions</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>recommendations</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>recommended_articles</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tags</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tagsbackup</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_12_09_50_841q1</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_12_09_50_l9za0</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_20_02_21_r1o5g</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_20_03_01_pvxek</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_26_17_35_s0ll6</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_04_26_17_37_iosaw</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_05_06_03_28_4rosy</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_05_29_17_30_9kjzr</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_05_29_17_33_h26lv</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_05_29_17_33_r13fv</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_06_02_02_44_b9lu1</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_06_02_02_52_6p7rw</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>tmp_2017_06_02_03_12_kj6m1</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>user_actions</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>user_interesteds</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>users</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>users_classes</span></li><li class=""><span class="tooltip-icon icon-wrap"><i class="fa fa-table"></i></span> <span>userss</span></li></ul></li></ul></div> <div class="dbtable-container"><div>Select a table to see its columns</div> <div><h3 class="table-name"></h3> <span style="display: none;">Loading columns...</span> <ul class="column-list"></ul></div></div></div></div> <div class="media-body"><div data-v-6cb58bda="" id="adhoc-editor" class="editor ace_editor ace-crimson-editor ace_focus" style="height: 60vh;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 14px; width: 6.59781px; left: 169.358px; top: 0px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 400px; width: 40px;"><div class="ace_gutter-cell " style="height: 14px;">1</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 14px;"></div></div><div class="ace_scroller" style="left: 40px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 772px; height: 400px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 531.825px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:14px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:14px"><span class="ace_keyword">select</span> * <span class="ace_keyword">from</span> <span class="ace_identifier">users</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer"><div class="ace_cursor" style="left: 129.358px; top: 0px; width: 6.59781px; height: 14px; opacity: 0;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 14px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 40px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 812px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div> <div class="error-container" style="display: none;"><pre></pre></div></div></div></div></div></div></div> <div class="actions"><button data-v-41fd2e14="" class="btn-loader btn btn-default ci-adhoc-submit-button"><!----> <span data-v-41fd2e14="" style="color: rgb(255, 255, 255); font-size: 13px;">Submit</span></button></div></form></div></div>
+
+<script language="javascript">
+  window.adhoc_query = {"id":null,"description":null,"query":"","owner_id":null,"tenant_id":null,"data_source_id":176,"created_at":null,"updated_at":null,"state":null,"start_time":null,"end_time":null,"error":null,"non_select_query":false,"data_source_name":"WPL-Production"};
+</script>
+
+</div>
+
+  </div>
+
+</div>
+
+<script language="javascript">
+  window.CIRCLECI = false;
+</script>
+<script>(function () {
+  var url = window.location;
+  var oImg = document.createElement("img");
+  oImg.setAttribute('src', 'https://app.hatchbuck.com/TrackWebPage?ACID=4121&amp;URL=' + url);
+})();  </script>
+
+
+  <!-- zopim support -->
+  <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+      $.src="//v2.zopim.com/?2zKnEO8rZtyOTeOu121nWgiu5vRBJrjV";z.t=+new Date;$.
+          type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+  </script>
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://tracking.holistics.io/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+  _paq.push(['setUserId', H.current_user.email])
+  _paq.push(['trackEvent', 'PageView', 'view', 'page_view.' + H.current_page])
+</script>
+
+
+
+</body></html>

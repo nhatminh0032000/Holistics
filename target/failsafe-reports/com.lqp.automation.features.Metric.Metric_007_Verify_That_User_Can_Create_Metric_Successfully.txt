@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.Metric.Metric_007_Verify_That_User_Can_Create_Metric_Successfully
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.258 sec <<< FAILURE! - in com.lqp.automation.features.Metric.Metric_007_Verify_That_User_Can_Create_Metric_Successfully
+Metric_007_Verify_That_User_Can_Create_Metric_Successfully(com.lqp.automation.features.Metric.Metric_007_Verify_That_User_Can_Create_Metric_Successfully)  Time elapsed: 26.147 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: WPL-Production
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'thuan549-PC', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'thuan549-PC', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+	at com.lqp.automation.pages.MetricPage.addNewMetrics(MetricPage.java:28)
+	at com.lqp.automation.steps.Metric.addNewMetric(Metric.java:29)
+	at com.lqp.automation.features.Metric.Metric_007_Verify_That_User_Can_Create_Metric_Successfully.Metric_007_Verify_That_User_Can_Create_Metric_Successfully(Metric_007_Verify_That_User_Can_Create_Metric_Successfully.java:34)
+

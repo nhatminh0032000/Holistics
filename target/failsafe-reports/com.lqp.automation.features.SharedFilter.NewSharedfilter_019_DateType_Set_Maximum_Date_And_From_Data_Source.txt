@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_019_DateType_Set_Maximum_Date_And_From_Data_Source
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.672 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_019_DateType_Set_Maximum_Date_And_From_Data_Source

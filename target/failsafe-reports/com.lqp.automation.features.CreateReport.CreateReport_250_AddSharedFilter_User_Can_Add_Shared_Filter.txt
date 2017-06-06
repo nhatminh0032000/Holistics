@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.CreateReport.CreateReport_250_AddSharedFilter_User_Can_Add_Shared_Filter
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.032 sec - in com.lqp.automation.features.CreateReport.CreateReport_250_AddSharedFilter_User_Can_Add_Shared_Filter

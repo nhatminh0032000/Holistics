@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.FilterPermisson.Permission_014_Dashboards_List_Business_User_Only_Sees_Shared_Dashboards
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.171 sec - in com.lqp.automation.features.FilterPermisson.Permission_014_Dashboards_List_Business_User_Only_Sees_Shared_Dashboards

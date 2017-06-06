@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_016_DateType_Set_Minimum_Date_And_Human_Friendly_Value
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.98 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_016_DateType_Set_Minimum_Date_And_Human_Friendly_Value

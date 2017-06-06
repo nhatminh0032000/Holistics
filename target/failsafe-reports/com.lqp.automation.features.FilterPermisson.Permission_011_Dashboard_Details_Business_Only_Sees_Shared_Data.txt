@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.FilterPermisson.Permission_011_Dashboard_Details_Business_Only_Sees_Shared_Data
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.739 sec - in com.lqp.automation.features.FilterPermisson.Permission_011_Dashboard_Details_Business_Only_Sees_Shared_Data

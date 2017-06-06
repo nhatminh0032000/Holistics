@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.FilterPermisson.Permission_003_ReportsList_Group_Sees_Only_Shared_Report
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.244 sec - in com.lqp.automation.features.FilterPermisson.Permission_003_ReportsList_Group_Sees_Only_Shared_Report

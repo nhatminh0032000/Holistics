@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_020_DateType_setPermission
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.416 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_020_DateType_setPermission

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.FilterPermisson.Permission_006_Reports_Details_Group_See_Data_Restricted_By_Filter
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.165 sec - in com.lqp.automation.features.FilterPermisson.Permission_006_Reports_Details_Group_See_Data_Restricted_By_Filter

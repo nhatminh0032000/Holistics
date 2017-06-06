@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.CreateReport.CreateReport_107_Pie_Chart__Verify_Xaxis_And_Yaxis_Work_Correctly
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.363 sec - in com.lqp.automation.features.CreateReport.CreateReport_107_Pie_Chart__Verify_Xaxis_And_Yaxis_Work_Correctly

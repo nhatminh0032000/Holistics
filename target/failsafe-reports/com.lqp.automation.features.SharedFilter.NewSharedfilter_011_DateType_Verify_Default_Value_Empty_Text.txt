@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_011_DateType_Verify_Default_Value_Empty_Text
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.175 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_011_DateType_Verify_Default_Value_Empty_Text

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lqp.automation.features.CreateReport.CreateReport_034_QuickTransforms_Verify_That_Quick_Pivot_Works_Correctly
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.391 sec - in com.lqp.automation.features.CreateReport.CreateReport_034_QuickTransforms_Verify_That_Quick_Pivot_Works_Correctly
