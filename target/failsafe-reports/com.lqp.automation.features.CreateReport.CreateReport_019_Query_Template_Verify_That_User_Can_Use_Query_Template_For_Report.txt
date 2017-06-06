@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lqp.automation.features.CreateReport.CreateReport_019_Query_Template_Verify_That_User_Can_Use_Query_Template_For_Report
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.353 sec - in com.lqp.automation.features.CreateReport.CreateReport_019_Query_Template_Verify_That_User_Can_Use_Query_Template_For_Report

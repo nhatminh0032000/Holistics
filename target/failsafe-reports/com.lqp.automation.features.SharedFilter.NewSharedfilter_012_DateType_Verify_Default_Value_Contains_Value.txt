@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_012_DateType_Verify_Default_Value_Contains_Value
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.033 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_012_DateType_Verify_Default_Value_Contains_Value

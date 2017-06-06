@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lqp.automation.features.FilterPermisson.Permission_001_Reports_List_Admin_See_All_Available_Reports
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.173 sec - in com.lqp.automation.features.FilterPermisson.Permission_001_Reports_List_Admin_See_All_Available_Reports

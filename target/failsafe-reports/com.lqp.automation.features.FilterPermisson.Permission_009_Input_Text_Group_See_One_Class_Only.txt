@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lqp.automation.features.FilterPermisson.Permission_009_Input_Text_Group_See_One_Class_Only
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.221 sec - in com.lqp.automation.features.FilterPermisson.Permission_009_Input_Text_Group_See_One_Class_Only

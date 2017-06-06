@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.lqp.automation.features.SharedFilter.NewSharedfilter_015_DateType_Allow_Empty_Value_Checked
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.459 sec - in com.lqp.automation.features.SharedFilter.NewSharedfilter_015_DateType_Allow_Empty_Value_Checked

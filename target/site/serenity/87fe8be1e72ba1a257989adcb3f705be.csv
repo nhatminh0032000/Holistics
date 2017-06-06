@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Adhoc queries 004  verify  that  adhoc  queries  is  created  successfully","Adhoc queries 004  verify  that  adhoc  queries  is  created  successfully","ERROR","2017-06-02T12:44:25.493+07:00","0.0","35.7"
-"Metric 007  verify  that  user  can  create  metric  successfully","Metric 007  verify  that  user  can  create  metric  successfully","ERROR","2017-06-02T12:59:16.482+07:00","0.0","26.15"
-"Report details 001  filter  multiple  selection  checked  work  correctly","Report details 001  filter  multiple  selection  checked  work  correctly","ERROR","2017-06-02T12:59:58.597+07:00","0.0","19.79"

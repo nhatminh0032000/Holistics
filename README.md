@@ -1,2 +1,0 @@
-# Holistics
-HolisticsSmokeTest
